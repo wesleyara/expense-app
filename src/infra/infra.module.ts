@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { EnvConfigModule } from './env-config/env-config.module';
 
-@Module({})
+@Module({
+  imports: [EnvConfigModule],
+})
 export class InfraModule {}
